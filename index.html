@@ -15,27 +15,28 @@
         <div class="image"><img src="https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/17/_12283777.jpg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1197"></div>
         <div class="image"><img src="https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/8/_12272768.jpg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1197"></div>
         <div class="image"><img src="https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/5/_101841105.jpg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1197"></div>
+        <div class="image"><img src="https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/5/_101841105.jpg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1197"></div>
         </div>
         <div class="arrow"> <img src="up-arrow.svg"></div>
        </div>
         <script>
             const slider = document.querySelectorAll('.image');   
             slider.forEach((elem) => elem.addEventListener('mousemove', () => {
-            elem.classList.add('border');
+               elem.classList.add('border');
             }));
             const arrow = document.querySelector('.arrow')
             const arrowDown = document.querySelector('.arrowDown');          
             arrow.addEventListener('click', () => {
-            slider.forEach((elem) => elem.classList.remove('Down'));
-            slider.forEach((elem) => elem.classList.add('sliding'));
-            arrow.classList.add('display')
-            arrowDown.classList.add('displayArrow')
+              slider.forEach((elem) => elem.classList.remove('Down'));
+              slider.forEach((elem) => elem.classList.add('sliding'));
+              arrow.classList.add('display')
+              arrowDown.classList.add('displayArrow')
             });
             arrowDown.addEventListener('click', () => {
-            slider.forEach((elem) => elem.classList.add('Down'));
-            slider.forEach((elem) => elem.classList.remove('sliding'));
-            arrow.classList.remove('display')
-            arrowDown.classList.remove('displayArrow')
+              slider.forEach((elem) => elem.classList.add('Down'));
+              slider.forEach((elem) => elem.classList.remove('sliding'));
+              arrow.classList.remove('display')
+              arrowDown.classList.remove('displayArrow')
             });        
         </script>
     </body>
